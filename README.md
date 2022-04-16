@@ -6,9 +6,9 @@
 
 </div>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AucaCoyan/TextEditor.py)
-![Lines of code](https://img.shields.io/tokei/lines/github/AucaCoyan/TextEditor.py)
-![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/AucaCoyan/TextEditor.py)
+![GitHub repo size](https://img.shields.io/github/repo-size/AucaCoyan/test-rocketbot)
+![Lines of code](https://img.shields.io/tokei/lines/github/AucaCoyan/test-rocketbot)
+![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/AucaCoyan/test-rocketbot)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Hacer un bot para comparar los beneficios de usar rocketbot como herramienta
