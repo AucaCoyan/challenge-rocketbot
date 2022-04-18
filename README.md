@@ -1,7 +1,5 @@
 <div align="center">
 
-# Cambiar etiquetas!!!!!
-
 # Test-Rocketbot
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AucaCoyan/test-rocketbot)
