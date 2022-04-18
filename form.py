@@ -17,10 +17,10 @@ def launch_chrome() -> webdriver.Chrome:
         service=Service(ChromeDriverManager().install()), options=options
     )
     driver.get("https://roc.myrb.io/s1/forms/M6I8P2PDOZFDBYYG")
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     try:
         assert driver.title == "Auditoria - R.O.C"
-    except Exception as e:
+    except Exception:
         driver.close()
         raise Exception("La pagina no cargó correctamente el título Auditoria - R.O.C")
     return driver
@@ -107,8 +107,6 @@ def completar_form(
     completar_observacion(observacion)
     submit_formulario()
 
-    print("submitting")
-
 
 def main() -> None:
     print("corriendo local")
@@ -126,25 +124,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-""" 
-abrir chrome
-click en operaciones
-llenar {operaciones} segun tipo  de operacion
-    "no se pudo completar operacion"
-click en tipo_de_riesgo
-llenar {tipo de riesgo}
-click en severidad
-llenar {severidad} segun alto medio bajo
-    "no se pudo completar operacion"
-click en responsable
-llenar {responsable}
-click en date
-llenar {date}
-click en observacion
-llenar {observacion}
-
-click en submit
-cerrar navegador
-
-"""

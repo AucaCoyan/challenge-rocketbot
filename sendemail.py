@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
 import os
 import datetime
-import yagmail
+import yagmail  # type: ignore
 
 
-def configurar_servidor():
+def configurar_servidor() -> None:
     load_dotenv("myvars.env")
 
     email_de = os.getenv("EMAIL_DE")
@@ -25,7 +25,7 @@ def enviar_email(
 
     message = f"""
 Hola! Este es un email automático.
-Usted tiene el proceso {proceso} en el estado {estado}, 
+Usted tiene el proceso {proceso} en el estado {estado},
 {observacion} y tiene una fecha de compromiso {fecha_de_compromiso.strftime('%d de %B de %Y')}"""
     asunto = "Email automatico de Rocketbot"
     yag.send(
@@ -33,7 +33,7 @@ Usted tiene el proceso {proceso} en el estado {estado},
     )
 
 
-def cerrar_servidor():
+def cerrar_servidor() -> None:
     yag.close()
 
 
@@ -52,14 +52,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-""" 
-configurar servidor
-(se podrá mantener el servidor persistente?)
-if verif_servidor == True
-    enviar email sdñlfksjdñflksdjañflksdajfñl
-else:
-    el email no pudo ser enviado
-cerrar conexión
-
-"""
