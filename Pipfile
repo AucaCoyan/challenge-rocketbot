@@ -5,6 +5,13 @@ name = "pypi"
 
 [packages]
 openpyxl = "*"
+selenium = "*"
+black = "*"
+mypy = "*"
+webdriver-manager = "*"
+pytest = "*"
+python-dotenv = "*"
+yagmail = "*"
 
 [dev-packages]
 
